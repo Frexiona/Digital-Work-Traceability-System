@@ -1,0 +1,208 @@
+*{
+    box-sizing: border-box;
+}
+body,div,dl,dt,dd,ul,li,h1,h2,h3,h4,h5,h6,input,form,textarea{
+    padding: 0;
+    margin: 0;
+    font-family: verdana, geneva, arial, helvetica, sans-serif;
+}
+span,span img,input,a{
+    display: inline-block;
+}
+li,ul,ol{
+    list-style: none;
+}
+img{
+    display: block;
+    border: none;
+}
+a{
+    display: block;
+    text-decoration: none;
+    color: black;
+}
+a:hover,a:visited{
+    text-decoration: none;
+}
+body{
+    min-width: 600px;
+}
+nav{
+    background-color: #cddac9;
+    padding-top: 0.7rem;
+    padding-bottom: 0.7rem;
+}
+nav>div>div{
+    float: right;
+    margin-right: 2.5%;
+}
+nav>div>div>span{
+    border-radius: 1em;
+    padding: 0.3rem;
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+    background-color: whitesmoke;
+}
+nav>div>div>span>input{
+    border: none;
+    outline: 0;
+    background-color: whitesmoke;
+    text-indent: 1em;
+}
+nav>div>div>span>img{
+    height: 2rem;
+    cursor: pointer;
+}
+nav>div>div>span+span{
+    background-color: #cddac9;
+    border: none;
+}
+header>div>ul{
+    text-align: center;
+    line-height: 3.0;
+    margin-top: 5rem;
+    padding-left: -2rem;
+}
+header>div>ul>li{
+    display: inline-block;
+    font-size: 2rem;
+    margin-left: 2rem;
+}
+header>div>ul+div{
+    background-color: whitesmoke;
+    outline: 2px solid whitesmoke;
+    width: 96%;
+    margin-left: 2%;
+}
+header>div>ul+div>ul{
+    text-align: left;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    display: flex;
+    width: 20em;
+    -webkit-user-select:none;
+    -moz-user-select:none;
+    -ms-user-select:none;
+    user-select:none;
+}
+header>div>ul+div>ul>li{
+    flex: 1;
+    cursor: pointer;
+    font-size: 1rem;
+    background-color: whitesmoke;
+    padding: 0.75rem;
+    margin-left: 0;
+    margin-right: 0;
+    line-height: 2.0;
+    text-align: center;
+    outline: 2px solid whitesmoke;
+}
+header>div>ul+div>ul>li:first-child{
+    background-color: white;
+    flex: 2;
+}
+header>div>ul+div>ul>li:hover{
+    background-color: white !important;
+}
+header>div>ul+div+div{
+    margin-top: 5rem;
+}
+header>div>ul+div+div>div{
+    height: 22rem;
+    margin-bottom: 2rem;
+}
+header>div>ul+div+div>div>div{
+    width: 85%;
+    margin-left: 7.5%;
+    cursor: pointer;
+    height: 20rem;
+}
+header>div>ul+div+div>div>div:hover,header>div>ul+div+div>div>div:hover{
+    width: 90%;
+    margin-left: 5%;
+}
+header>div>ul+div+div>div>div>img{
+    width: 100%;
+    height: 16rem;
+}
+header>div>ul+div+div>div>div>img+div{
+    background-color: whitesmoke;
+    height: 4rem;
+}
+header>div>ul+div+div>div>div>img+div>span{
+    position: relative;
+    height: 2rem;
+    width: 100%;
+    top: -2rem;
+    background-color: whitesmoke;
+    opacity: 0;
+    display: flex;
+}
+header>div>ul+div+div>div>div:hover>img+div>span{
+    opacity: 0.8;
+    transition: 0.2s;
+}
+header>div>ul+div+div>div>div>img+div>span>div{
+    flex: 1;
+    color: black;
+    line-height: 2rem;
+    font-size: 1rem;
+}
+header>div>ul+div+div>div>div>div>div{
+    width: 50%;
+    display: inline-block;
+    position: relative;
+    top: -2rem;
+    font-size: 1rem;
+}
+@media screen and (max-width:1200px){
+    header>div>ul+div+div>div>div>img+div>span>div{
+        font-size: 0.5em !important;
+    }
+    header>div>ul+div+div>div>div>div>div{
+        font-size: 0.5em !important;
+    }
+}
+header>div+div>div{
+    width: 96%;
+    margin-left: 2%;
+    margin-top: -2.5rem;
+    background-color: whitesmoke;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+}
+header>div+div>div>div{
+    display: flex;
+    width: 30%;
+    margin: 0 auto;
+}
+@media screen and (max-width: 970px){
+    header>div+div>div>div{
+        width: 50%;
+    }
+    header>div+div>div{
+        margin-top: 3rem;
+    }
+}
+header>div+div>div>div>div{
+    flex: 1;
+    padding: 0.5rem 0;
+    text-align: center;
+    cursor: pointer;
+}
+header>div+div>div>div>div+div+div{
+    flex: 3;
+}
+header>div+div>div>div>div>input{
+    overflow: hidden !important;
+    width: 4rem;
+    line-height: 1.0;
+    border: 0;
+    outline: 2px solid whitesmoke;
+}
+header>div+div>div>div>div>button{
+    background-color: lightgray;
+    font-size: 1rem;
+    border: 0;
+    outline: 0;
+}

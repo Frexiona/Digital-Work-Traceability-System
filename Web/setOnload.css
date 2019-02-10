@@ -1,0 +1,10 @@
+header>div{
+    display: flex;
+    border: 1px solid palegreen;
+    height: 5rem;
+}
+header>div>div{
+    flex: 1;
+    border: 1px solid sienna;
+    height: 5rem;
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript">
+        function iiii() {
+            var express = require("express");
+            var app = express();
+            var server = require("http").createServer(app);
+            var io = require("socket.io")(server);
+            var BigNumber = require('bignumber.js');
+
+            app.use(express.static("public"));
+
+            // 现连接到geth节点
+            var Web3 = require("web3");
+            web3 = new Web3(new Web3.providers.HttpProvider("http://10.20.0.62:8180"));
+
+            app.get("/sendcoin", function (req, res) {
+
+                var address_a = req.query.address_a;
+                var address_b = req.query.address_b;
+                var trans_value = req.query.trans_value;
+
+               // var CommodityName = req.query.
+
+                //转账操作
+                var txhash = cinstracebility.getCommodityCode(CommocityName);
+                res.send(txhash);
+
+            })
+            server.listen(8180);
+        }
+    </script>
+</head>
+<body>
+    <button type="button" onclick="iiii();">start</button>
+</body>
+</html>

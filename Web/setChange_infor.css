@@ -1,0 +1,61 @@
+body{
+    -webkit-user-select:none;
+    -moz-user-select:none;
+    -ms-user-select:none;
+    user-select:none;
+    min-width: 700px;
+}
+li,ul,ol{
+    list-style: none;
+}
+nav{
+    background-color: #cddac9;
+    line-height: 2.0;
+}
+nav>div{
+    text-align: center;
+    color: white;
+    font-weight: bolder;
+}
+header>div{
+    width: 50%;
+}
+header>div>div{
+    width: 35rem;
+    margin: 0 auto;
+    background-color: whitesmoke;
+    padding: 4rem;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+header>div>div>form{
+    text-align: center;
+}
+header>div>div>form hr{
+    border-color: gray;
+}
+header>div>div>form>div{
+    display: flex;
+    margin-top: 2.5rem;
+}
+header>div>div>form>div>span{
+    flex: 1;
+}
+header>div>div>form>div>input{
+    flex: 2;
+    text-indent: 1em;
+}
+header>div>div>form>button{
+    margin: 2.5rem auto;
+    margin-bottom: 1rem;
+    padding: 0.5rem 2rem;
+    outline: 0;
+    border: 1px solid gray;
+    border-radius: 10px;
+    background-color: white;
+}
+#getCheck{
+    background-color: aquamarine;
+    line-height: 2.0;
+    cursor: pointer;
+}

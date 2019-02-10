@@ -1,0 +1,72 @@
+body{
+    min-width: 1000px;
+}
+nav{
+    background-color: #cddac9;
+    margin-bottom: 5rem;
+}
+nav>div>div{
+    text-align: center;
+    height: 3rem;
+    font-size: 2rem;
+}
+header{
+    min-width: 1000px;
+}
+header>div>div{
+    width: 90%;
+    background-color: whitesmoke;
+    margin: 0 auto;
+    display: flex;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+header>div>div>div{
+    flex: 1;
+}
+header>div>div>div+div{
+    flex: 1;
+}
+#preview{
+    width:80%;
+    height: 27rem;
+    overflow:hidden;
+    padding: 1rem;
+    margin: 0 auto;
+    text-align: center;
+}
+#imghead {
+    filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod=image);
+    margin:auto;
+    min-width: 80%;
+    min-height: 100%;
+}
+#file{
+    margin-left: 10rem;
+}
+header>div>div>div:first-child>input{
+    width: 80%;
+    margin: 0 auto;
+}
+header>div>div>div+div{
+    margin-right: 10%;
+}
+header>div>div>div+div>div{
+    display: inline-block;
+    width: 25%;
+    margin-top: 2rem;
+}
+header>div>div>div+div>input{
+    width: 50%;
+    display: inline-block;
+    margin-top: 2rem;
+    text-indent: 1em;
+}
+header>div>div>div+div>select{
+    background-color: whitesmoke;
+    width: 50%;
+}
+header>div>div>div+div>button{
+    margin-top: 2rem;
+    display: block;
+}
